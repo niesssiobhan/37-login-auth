@@ -1,46 +1,35 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Auth and Login
 
-### Author: Student/Group Name
+### Author: Siobhan Niess
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [repo](https://codesandbox.io/s/y0v8vkwk51)
+* [url](https://y0v8vkwk51.codesandbox.io/)
 
-#### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+- `./__tests__/actions.test.js` this file tests for the actions
+- `./__tests__/records.test.js` this file tests for the records 
+- `./__tests__/reducers.test.js` this file tests for the reducers
+- `./components/auth/auth.js` this files holds authentication functionality
+- `./components/auth/context.js` this file holds the context functionality
+- `./components/auth/login.js` this file holds the login functionality
+- `./components/cms/actions.js` thisfile holds  
+- `./components/cms/cms.js` this file holds the actions permissions 
+- `./components/cms/models.js` this file holds the models
+- `./components/cms/record.js` this file holds the rendering of the form submit
+- `./components/cms/records.js` this file holds the delete action and some styling
+- `./components/cms/reducers.js` this file holds the switch cases for the actions
+- `./components/cms/cms.scss` this file holds some of the styling
+- `./components/if/index.js`this file holds the conditionals
+- `./store/index.js` this file holds the API reducer
+- `./index.js`this file renders the app
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* You can either use the links above of fork the repo
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
+Tests have been run to for actions, records, and reducers to make sure they are running properly
